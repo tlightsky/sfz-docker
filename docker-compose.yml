@@ -1,0 +1,9 @@
+version: "3.2"
+services:
+  sfz:
+    build: .
+    volumes:
+      - ./web:/web
+    ports:
+      - 80:80
+    restart: unless-stopped
